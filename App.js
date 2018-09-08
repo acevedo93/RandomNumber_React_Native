@@ -6,7 +6,7 @@ import ListItem from './src/Generator/ListItem'
 import Input from './src/Input/Input'
 import PickerComponent from './src/Picker/Picker';
 import Spinetta from './src/luis-alberto-spinetta0.jpg'
-
+import ModalComponent from './src/Modal/Modal'
 export default class App extends React.Component {
   state = {
     nameOfApp :'My Awesome App',
@@ -66,9 +66,11 @@ export default class App extends React.Component {
               source={{uri:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8WMuPg-nFBxUg0pOo0wmx1GLQiP2HEhi-5k4_KFq7OBqjA9psyg'}}
               style = {styles.image}
               resizeMode="contain"
-              onLoadEnd={()=>alert('loaded')}
+             //onLoadEnd={()=>alert('loaded')}
               />
             </View>
+
+            <ModalComponent/>
           </ScrollView>
       </View>
     );
